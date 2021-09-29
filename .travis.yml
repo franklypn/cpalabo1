@@ -3,7 +3,8 @@ php:
   - '7.3'
   - '8.0'
   - hhvm-nightly
-script:"tests/build.sh"
+script:
+- "tests/build.sh"
 before_innstall:
   - sudo apt-get update
   - sudo apt-get -y install libxml2-dev
