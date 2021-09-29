@@ -3,4 +3,6 @@ php:
   - '7.3'
 script:"tests/build.sh"
 before_innstall:
-  -chmod +x tests/build.sh
+  - sudo apt-get update
+  - sudo apt-get -y install libxml2-dev
+  - chmod +x tests/build.sh
