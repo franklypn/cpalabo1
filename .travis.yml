@@ -8,3 +8,8 @@ before_innstall:
   - sudo apt-get update
   - sudo apt-get -y install libxml2-dev
   - chmod +x tests/build.sh
+  deploy:
+  provider: heroku
+  api_key:
+    secure: a2c39cff-b30e-486c-9701-9a5f433b56bf
+    
